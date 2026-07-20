@@ -1,0 +1,38 @@
+# ==========================================
+# Airflow Specific Options
+# ==========================================
+
+# Local development runtime logs
+logs/
+airflow-webserver.pid
+airflow-worker.pid
+airflow-scheduler.pid
+airflow-triggerer.pid
+standalone_admin_password.txt
+
+# Local configurations (usually injected via environment variables)
+airflow.cfg
+unittests.cfg
+webserver_config.py
+
+# Local SQLite database files used for rapid testing
+airflow.db
+unittests.db
+
+# Python & Environment Patterns
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+env/
+venv/
+ENV/
+
+# IDEs and OS Metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+.env
