@@ -1,0 +1,15 @@
+name: Sync on main
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  sync:
+    runs-on: self-hosted
+    steps:
+      - name: Pull latest
+        run: |
+          cd /home/cassini/airflow
+          git fetch origin main
+          git reset --hard origin/main
