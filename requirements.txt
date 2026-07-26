@@ -1,2 +1,6 @@
 apache-airflow-providers-microsoft-mssql
+apache-airflow-providers-mongo
 polars-lts-cpu
+pandas
+pyodbc
+pymongo
